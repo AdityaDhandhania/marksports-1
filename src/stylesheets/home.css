@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .landing-navbar:not(.top-nav-collapse) {
+    background: #353839 !important;
+  }
+}
+.landing-navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+.top-nav-collapse {
+  background-color: #353839;
+}
+@media only screen and (max-width: 768px) {
+  .landing-navbar  {
+    background-color: #353839;
+  }
+}
+
+.landing-navbar.active {
+  background: #353839 !important;
+  transition: 0.5s ease-in;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.content {
+  background: #0079ba;
+}
+
+.texts {
+  color: white;
+}
+
+.head-hr {
+  border-top: 2px solid black;
+}
+
+.drop {
+  filter: drop-shadow(0 0 0.75rem #c9e9f6);
+}
+
+.carousel-box {
+  background: #f7f8f2;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: #353839;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.footer {
+  background: #353839;
+}
+
+.skewed-div {
+  /* position: absolute; */
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  height: 9vw;
+  background-color: #abadac;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.talent-skew {
+  width: calc(50% - 50px);
+  height: 100%;
+  background-color: #abadac;
+}
+
+.brands-skew {
+  width: calc(50% + 50px);
+  height: 100%;
+  background-color: #f24741;
+  border-left: 100px solid #abadac;
+  border-bottom: 9vw solid transparent;
+}
+
+.text-links {
+  font-size: 6vw;
+  color: white;
+}
+
+.text-links:hover {
+  text-decoration: none;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+}
+
+.x {
+  color: #f24741;
+}
+
+.about-box {
+  color: #353839;
+  font-family: "Montserrat", sans-serif;
+}
+
+.talent-box {
+  background-color: #00000086;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.talent-box h3 {
+  color: #ffd60a;
+}
+
+.talent-box h4 {
+  color: #ffd60a;
+}
+
+.service-box {
+  background-color: #0079ba;
+  border-radius: 15px;
+  text-align: left;
+}
+
+/* Badge animation */
+.pulse{
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.service-card{
+  height: 100vh;
+}
+
+.service-brand{
+  background-image: url("Branding.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-social{
+  background-image: url("SM.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-content{
+  background-image: url("Content.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-video{
+  background-image: url("video.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-links{
+  display: none;
+  
+}
+
+.service-card:hover .service-links{
+  display: block;
+}
+
+/* Brands scroll menu */
+.brand-main {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  font-size: 25px;
+  background: blue;
+  margin: 10px;
+  display: inline-block;
+  line-height: 100px; 
+}
+.image-container {
+  vertical-align: middle;
+  display: inline-block;
+  width: 50%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.prev, .next {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  color: black;
+  transition: 0.6s ease;
+}
+.next {
+  margin-left: 5px;
+}
+.prev {
+  margin-right: 5px;
+}
+.prev:hover, .next:hover {
+  color: white;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+/* Serivces */
+.card-box {
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.services{
+  background-color: #ffc300;
+}
+
+#other{
+  background-color: black;
+}
